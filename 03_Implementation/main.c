@@ -73,10 +73,10 @@ int main()
         break;
     case 6:                     //square
         system("CLS");
-        float side;
+        float si;
         printf("Enter side of square: ");
-        scanf("%f", &side);
-        printf("The area of square is %f\n\n",square(side));
+        scanf("%f", &si);
+        printf("The area of square is %f\n\n",square(si));
         break;
     case 7:
         system("CLS");
