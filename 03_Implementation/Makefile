@@ -1,5 +1,5 @@
 
-PROJECT_NAME = Sample
+PROJECT_NAME = SurfaceEtVolume
 
 
 BUILD = build
