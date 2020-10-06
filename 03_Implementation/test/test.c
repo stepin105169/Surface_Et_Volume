@@ -30,11 +30,9 @@ int main() {
 void test_circle(void)
 	{
 	CU_ASSERT(50.240002 == circle(4));
-  	//TEST_ASSERT_EQUAL(113.040001, sphere(3));
 	}
 
 void test_square(void)
 	{
 	CU_ASSERT(36.000000 == square(6));
-        //TEST_ASSERT_EQUAL(25.120001, cone(2,2));
 	}
