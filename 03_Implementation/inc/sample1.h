@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float sphere(float radius);
-float cone(float radius, float slantheight);
+float circle(float radius);
+float square(float side);
 
 #endif // SAMPLE1_H_INCLUDED
