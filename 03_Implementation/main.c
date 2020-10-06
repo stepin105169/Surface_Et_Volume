@@ -24,21 +24,80 @@ int main()
     switch(n){
     case 1:                     //sphere
         system("CLS");
-        float r;
-        printf("Enter the radius of sphere: ");
+        float v, a, r;          //volume, area, radius
+        printf("Enter radius of sphere: ");
         scanf("%f", &r);
-        printf("The area of sphere is %f\n\n",sphere(r));
+        v = (4*3.14*r*r*r)/3;
+        a = 4*3.14*r*r;
+        printf("\n\nArea of Sphere: %f\nVolume of Sphere: %f\n\n\n\n" ,a ,v);
         break;
     case 2:                     //cone
         system("CLS");
-        float ra, slant;
+        float vo, ra, ar, h, l; //volume, radius, area, height, slantheight
         printf("Enter radius of cone: ");
         scanf("%f", &ra);
-        printf("\nEnter the slant height of cone: ");
-        scanf("%f", &slant);
-        printf("The area of cone is %f\n\n",cone(ra,slant));
+        printf("\nEnter height of cone: ");
+        scanf("%f", &h);
+        printf("\nEnter slant height of cone: ");
+        scanf("%f", &l);
+        vo = (3.14*ra*ra*h)/3;
+        ar = 3.14*ra*l+3.14*ra*ra;
+        printf("\n\nArea of Cone: %f\nVolume of Cone: %f\n\n\n\n" ,ar, vo);
         break;
-
+    case 3:                         //cylinder
+        system("CLS");
+        float rad, vol, are, he;    //radius, volume, area, height
+        printf("Enter radius of cylinder: ");
+        scanf("%f" ,&rad);
+        printf("\nEnter height of cylinder: ");
+        scanf("%f" ,&he);
+        vol = 3.14*rad*rad*he;
+        are = 2*3.14*rad*he+2*3.14*rad*rad;
+        printf("\n\nArea of Cylinder: %f\nVolume of Cylinder: %f\n\n\n\n",are, vol);
+        break;
+    case 4:
+        system("CLS");
+        float edge,volu,area;
+        printf("Enter edge of cube: ");
+        scanf("%f", &edge);
+        volu = edge*edge*edge;
+        area = 6*edge*edge;
+        printf("\n\nArea of Cube: %f\nVolume of Cube: %f\n\n\n\n", area, volu);
+        break;
+    case 5:                     //circle
+        system("CLS");
+        float radi;
+        printf("Enter the radius of circle: ");
+        scanf("%f", &radi);
+        printf("The area of circle is %f\n\n",circle(radi));
+        break;
+    case 6:                     //square
+        system("CLS");
+        float side;
+        printf("Enter side of square: ");
+        scanf("%f", &side);
+        printf("The area of square is %f\n\n",square(side));
+        break;
+    case 7:
+        system("CLS");
+        printf("Enter the length of rectangle: ");
+        float length,width,arearec;
+        scanf("%f", &length);
+        printf("\nEnter the width of rectangle: ");
+        scanf("%f", &width);
+        arearec = length*width;
+        printf("\n\nArea of Rectangle: %f\n\n\n\n", arearec);
+        break;
+    case 8:
+        system("CLS");
+        printf("Enter the base of triangle: ");
+        float base,hei,areatri;
+        scanf("%f", &base);
+        printf("\nEnter the height of triangle: ");
+        scanf("%f", &hei);
+        areatri = (base*hei)/2;
+        printf("\n\nArea of Triangle: %f\n\n\n\n", areatri);
+        break;
 
     default:
         printf("Error\n");
@@ -48,7 +107,7 @@ int main()
     printf("\t\tWould you like to do another calculations:\n\n");
     printf("\t\t\t< 1 > Yes\n");
     printf("\t\t\t< 2 > No\n");
-    printf("Select your option: ");
+    printf("\t\tSelect your option: ");
     scanf("\t%d", &choose);
         system("CLS");
         if (choose == 2) {
