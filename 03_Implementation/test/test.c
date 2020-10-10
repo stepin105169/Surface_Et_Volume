@@ -29,7 +29,7 @@ int main() {
 
 void test_circle(void)
 	{
-	CU_ASSERT(50.240002 == circle(4));
+	CU_ASSERT(50.240000 == circle(4));
 	}
 
 void test_square(void)
