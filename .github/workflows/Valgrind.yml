@@ -20,6 +20,4 @@ jobs:
     - name: make test
       run: |
         make test -C 03_Implementation/
-        valgrind ./03_Implementation/build/Test_Surface_Et_Volume.out
-        
-  
+        valgrind ./03_Implementation/build/Test_SurfaceEtVolume.out
