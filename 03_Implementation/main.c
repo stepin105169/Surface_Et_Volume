@@ -1,12 +1,11 @@
 #include <sample1.h>
 
-int main()
-{
+int main(){
     int n;
     int choose;
     int again = 1;
     while(again == 1){
-        printf("\t\tTo get the area and volume of solid shapes\n\n\n");
+        printf("\n\t\tWelcome to Surface Et Volume!!\n\n\n");
         printf("\t\t\tHere is your menu\n\n");
         printf("\t\t\t3D SHAPES\n\n");
         printf("\t\t\t  1. Sphere\n");
@@ -55,9 +54,9 @@ int main()
         are = 2*3.14*rad*he+2*3.14*rad*rad;
         printf("\n\nArea of Cylinder: %f\nVolume of Cylinder: %f\n\n\n\n",are, vol);
         break;
-    case 4:
+    case 4:                         //cube
         system("CLS");
-        float edge,volu,area;
+        float edge,volu,area;       //edge, volume, area
         printf("Enter edge of cube: ");
         scanf("%f", &edge);
         volu = edge*edge*edge;
@@ -66,32 +65,32 @@ int main()
         break;
     case 5:                     //circle
         system("CLS");
-        float radi;
+        float radi;             //radius
         printf("Enter the radius of circle: ");
         scanf("%f", &radi);
         printf("The area of circle is %f\n\n",circle(radi));
         break;
     case 6:                     //square
         system("CLS");
-        float si;
+        float si;               //side
         printf("Enter side of square: ");
         scanf("%f", &si);
         printf("The area of square is %f\n\n",square(si));
         break;
-    case 7:
+    case 7:                                 //rectangle
         system("CLS");
         printf("Enter the length of rectangle: ");
-        float length,width,arearec;
+        float length,width,arearec;         //length, width, area of rectangle
         scanf("%f", &length);
         printf("\nEnter the width of rectangle: ");
         scanf("%f", &width);
         arearec = length*width;
         printf("\n\nArea of Rectangle: %f\n\n\n\n", arearec);
         break;
-    case 8:
+    case 8:                                 //triangle
         system("CLS");
         printf("Enter the base of triangle: ");
-        float base,hei,areatri;
+        float base,hei,areatri;             //base, height, area of triangle
         scanf("%f", &base);
         printf("\nEnter the height of triangle: ");
         scanf("%f", &hei);
@@ -99,14 +98,15 @@ int main()
         printf("\n\nArea of Triangle: %f\n\n\n\n", areatri);
         break;
 
-    default:
-        printf("Error\n");
+    default:                                //default
+        printf("Error!!\n");
+        printf("Please choose the correct option!\n");
         break;
     }
     printf("\t=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n\n");
     printf("\t\tWould you like to do another calculations:\n\n");
     printf("\t\t\t< 1 > Yes\n");
-    printf("\t\t\t< 2 > No\n");
+    printf("\t\t\t< 2 > No\n\n");
     printf("\t\tSelect your option: ");
     scanf("\t%d", &choose);
         system("CLS");
