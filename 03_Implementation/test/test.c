@@ -1,7 +1,7 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-#define PROJECT_NAME    "Surface_Et_Volume"
+#define PROJECT_NAME    "SurfaceEtVolume"
 #include<sample1.h>
 
 void test_circle(void);
@@ -29,7 +29,7 @@ int main() {
 
 void test_circle(void)
 	{
-	CU_ASSERT(50.000000 == circle(4));
+	CU_ASSERT(50.240000 == circle(4));
 	}
 
 void test_square(void)
