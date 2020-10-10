@@ -1,7 +1,7 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-#define PROJECT_NAME    "Sample"
+#define PROJECT_NAME    "Surface_Et_Volume"
 #include<sample1.h>
 
 void test_circle(void);
