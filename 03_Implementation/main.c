@@ -77,25 +77,23 @@ int main(){
         scanf("%f", &si);
         printf("The area of square is %f\n\n",square(si));
         break;
-    case 7:                                 //rectangle
+    case 7:                     //rectangle
         system("CLS");
+        float length,width;     //length, width, area
         printf("Enter the length of rectangle: ");
-        float length,width,arearec;         //length, width, area of rectangle
         scanf("%f", &length);
         printf("\nEnter the width of rectangle: ");
         scanf("%f", &width);
-        arearec = length*width;
-        printf("\n\nArea of Rectangle: %f\n\n\n\n", arearec);
+        printf("\n\nArea of Rectangle: %f\n\n\n\n", rectangle(length, width));
         break;
-    case 8:                                 //triangle
+    case 8:                         //triangle
         system("CLS");
+        float base,hei;     //base, height, area
         printf("Enter the base of triangle: ");
-        float base,hei,areatri;             //base, height, area of triangle
         scanf("%f", &base);
         printf("\nEnter the height of triangle: ");
         scanf("%f", &hei);
-        areatri = (base*hei)/2;
-        printf("\n\nArea of Triangle: %f\n\n\n\n", areatri);
+        printf("\n\nArea of Triangle: %f\n\n\n\n", triangle(base, hei));
         break;
 
     default:                                //default
